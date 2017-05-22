@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,8 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2l-By-Tle">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2l-By-Tle">
                                 <rect key="frame" x="164" y="591" width="46" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Xrh-v4-eKA"/>
+                                    <constraint firstAttribute="height" constant="44" id="vAJ-6e-Tlf"/>
+                                </constraints>
                                 <state key="normal" title="Tap"/>
                                 <connections>
                                     <action selector="tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oQf-uR-yxH"/>
@@ -31,10 +36,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="f2l-By-Tle" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2OU-25-AVc"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f2l-By-Tle" secondAttribute="bottom" constant="389" id="3vu-rr-87j"/>
-                            <constraint firstItem="f2l-By-Tle" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="aVz-hC-GGm"/>
-                            <constraint firstItem="f2l-By-Tle" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qOx-mS-Vxh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f2l-By-Tle" secondAttribute="bottom" constant="133" id="qun-sA-iga"/>
+                            <constraint firstItem="f2l-By-Tle" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="144" id="zkn-Wk-OFW"/>
                         </constraints>
                     </view>
                     <connections>
